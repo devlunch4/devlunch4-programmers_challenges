@@ -20,13 +20,13 @@
 
 --ANSWER MySQL
 SELECT *
-FROM   animal_ins
-ORDER  BY animal_id;
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID;
 
 --ANSWER Oracle
 SELECT *
-FROM   animal_ins
-ORDER  BY animal_id;
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID;
 
 
 /* 역순 정렬하기 */
@@ -52,15 +52,15 @@ ORDER  BY animal_id;
 
 --ANSWER MySQL
 SELECT NAME,
-       datetime
-FROM   animal_ins
-ORDER  BY animal_id DESC;
+       DATETIME
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID DESC;
 
 --ANSWER Oracle
 SELECT NAME,
-       datetime
-FROM   animal_ins
-ORDER  BY animal_id DESC;
+       DATETIME
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID DESC;
 
 
 /* 아픈 동물 찾기 */
@@ -91,18 +91,18 @@ ORDER  BY animal_id DESC;
 --A381217	Cherokee
 
 --ANSWER MySQL
-SELECT animal_id,
-       name
-FROM   animal_ins
-WHERE  intake_condition = 'Sick'
-ORDER  BY animal_id;
+SELECT ANIMAL_ID,
+       NAME
+FROM   ANIMAL_INS
+WHERE  INTAKE_CONDITION = 'Sick'
+ORDER  BY ANIMAL_ID;
 
 --ANSWER Oracle
-SELECT animal_id,
-       name
-FROM   animal_ins
-WHERE  intake_condition = 'Sick'
-ORDER  BY animal_id;
+SELECT ANIMAL_ID,
+       NAME
+FROM   ANIMAL_INS
+WHERE  INTAKE_CONDITION = 'Sick'
+order  by animal_id;
 
 
 
@@ -135,18 +135,18 @@ ORDER  BY animal_id;
 --A381217	Cherokee
 
 --ANSWER MySQL
-SELECT animal_id, name
-FROM animal_ins
-WHERE intake_condition
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE INTAKE_CONDITION
 NOT LIKE 'Aged'
-ORDER BY animal_id
+ORDER BY ANIMAL_ID
 
 --ANSWER Oracle
-SELECT animal_id, name
-FROM animal_ins
-WHERE intake_condition
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE INTAKE_CONDITION
 NOT LIKE 'Aged'
-ORDER BY animal_id
+ORDER BY ANIMAL_ID
 
 
 /* 동물의 아이디와 이름 */
@@ -173,16 +173,16 @@ ORDER BY animal_id
 --((이하 생략))
 
 --ANSWER MySQL
-SELECT animal_id,
-       name
-FROM   animal_ins
-ORDER  BY animal_id;
+SELECT ANIMAL_ID,
+       NAME
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID;
 
 --ANSWER Oracle
-SELECT animal_id,
-       name
-FROM   animal_ins
-ORDER  BY animal_id;
+SELECT ANIMAL_ID,
+       NAME
+FROM   ANIMAL_INS
+ORDER  BY ANIMAL_ID;
 
 
 /* 여러 기준으로 정렬하기 */
@@ -217,20 +217,20 @@ ORDER  BY animal_id;
 --A349996	Sugar	2018-01-22 14:32:00
 
 --ANSWER MySQL
-SELECT animal_id,
-       name,
-       datetime
-FROM   animal_ins
-ORDER  BY name ASC,
-          datetime DESC;
+SELECT ANIMAL_ID,
+       NAME,
+       DATETIME
+FROM   ANIMAL_INS
+ORDER  BY NAME ASC,
+          DATETIME DESC;
 
 --ANSWER Oracle
-SELECT animal_id,
-       name,
-       datetime
-FROM   animal_ins
-ORDER  BY name ASC,
-          datetime DESC;
+SELECT ANIMAL_ID,
+       NAME,
+       DATETIME
+FROM   ANIMAL_INS
+ORDER  BY NAME ASC,
+          DATETIME DESC;
 
 
 /* 상위 n개 레코드 */
@@ -261,16 +261,16 @@ ORDER  BY name ASC,
 --※ 보호소에 가장 먼저 들어온 동물은 한 마리인 경우만 테스트 케이스로 주어집니다.
 
 --ANSWER MySQL
-SELECT name
-FROM animal_ins
-ORDER BY datetime
+SELECT NAME
+FROM ANIMAL_INS
+ORDER BY DATETIME
 LIMIT 1;
 
 --ANSWER Oracle
-SELECT name
+SELECT NAME
 FROM (SELECT *
-      FROM animal_ins
-      ORDER BY datetime
+      FROM ANIMAL_INS
+      ORDER BY DATETIME
      )
 WHERE ROWNUM = 1;
 -- OR
