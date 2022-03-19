@@ -6,6 +6,7 @@ https://programmers.co.kr/learn/challenges?tab=all_challenges
 > 
 > # SQL High Score Kit, <span style= "color: gray">SQL 고득점 Kit</span> 
 > ...Working.
+> https://github.com/devlunch4/programmers_challenges/tree/main/sql_high_score_kit
 
 
 
