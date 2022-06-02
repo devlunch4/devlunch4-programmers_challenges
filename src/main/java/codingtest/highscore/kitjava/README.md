@@ -5,12 +5,12 @@ https://programmers.co.kr/learn/challenges?tab=algorithm_practice_kit
 https://github.com/devlunch4/programmers_challenges/tree/main/src/main/java/codingtest/highscore/kitjava
 
 
-* 해시; Hash  
+* 해시; Hash - https://programmers.co.kr/learn/courses/30/parts/12077  
 Key-value쌍으로 데이터를 빠르게 찾아보세요.  
 4 / 4
 
 
-* 스택/큐; Stack/Que
+* 스택/큐; Stack/Que - https://programmers.co.kr/learn/courses/30/parts/12081
 LIFO, FIFO, push & pop! 스택과 큐를 이용해서 문제를 풀어보세요.  
 0 / 4
 
